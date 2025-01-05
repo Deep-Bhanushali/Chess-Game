@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mode-selection">
+            <h1>Chess Game</h1>
+            <button id="pvp-btn">Player vs Player</button>
+            <button id="pvc-btn">Player vs Computer</button>
+        </div>
+
+        <div id="game-content" style="display: none;">
+            <div class="game-header">
+                <div class="game-status">
+                    <div id="status-message" class="status">White's turn</div>
+                    <div id="check-status" class="check-status"></div>
+                </div>
+                <div class="game-controls">
+                    <button id="undo-btn">Undo Move</button>
+                    <button id="reset-btn">Reset Game</button>
+                    <button id="change-mode-btn">Change Mode</button>
+                </div>
+            </div>
+
+            <div id="chessboard"></div>
+
+            <div class="player-info">
+                <div class="white-player">
+                    <h2>White</h2>
+                    <div id="white-captured"></div>
+                </div>
+                <div class="black-player">
+                    <h2>Black</h2>
+                    <div id="black-captured"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
